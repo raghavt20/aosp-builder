@@ -8,3 +8,13 @@ repo init -q --no-repo-verify --depth=1 -u https://github.com/AOSPA/manifest -b 
 
 # Sync source with -q, no need unnecessary messages, you can remove -q if want! try with -j30 first, if fails, it will try again with -j8
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j 30 || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j 8
+
+git clone --depth=1 https://github.com/AOSPA/android_hardware_qcom_display -b ruby-855 hardware/qcom/display
+git clone --depth=1 https://github.com/AOSPA/android_hardware_qcom_audio -b ruby-855 vendor/qcom/opensource/audio-hal/primary-hal
+git clone --depth=1 https://github.com/AOSPA/android_hardware_qcom_media -b ruby-855 hardware/qcom/media
+git clone https://github.com/xiaomi-sm6150/android_device_xiaomi_violet device/xiaomi/violet --depth=1 -b ruby
+git clone https://github.com/xiaomi-sm6150/android_device_xiaomi_sm6150-common/ device/xiaomi/sm6150-common --depth=1 -b ruby
+git clone https://github.com/xiaomi-sm6150/android_vendor_xiaomi vendor/xiaomi --depth=1 -b ruby
+git clone https://github.com/xiaomi-sm6150/android_kernel_xiaomi_sm6150 --depth=1 -b ruby kernel/xiaomi/sm6150
+git clone https://github.com/LineageOS/android_hardware_xiaomi hardware/xiaomi --depth=1
+
