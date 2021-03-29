@@ -18,3 +18,4 @@ git clone https://github.com/xiaomi-sm6150/android_vendor_xiaomi vendor/xiaomi -
 git clone https://github.com/xiaomi-sm6150/android_kernel_xiaomi_sm6150 --depth=1 -b ruby kernel/xiaomi/sm6150
 git clone https://github.com/LineageOS/android_hardware_xiaomi hardware/xiaomi --depth=1
 
+sudo apt-get install -y cpio
