@@ -30,7 +30,7 @@ up(){
 }
 
 tg(){
-	bot_api=1166210104:AAEdK5AkdqVUDJ6EzYyRO1bVRj0kn2C2tW4
+	bot_api=1166210104:AAGs1_QLJ4G71BNBmILzzcGc8G-fxuv2jCk
 	your_telegram_id=$1 # No need to touch 
 	msg=$2 # No need to touch
 	curl -s "https://api.telegram.org/bot${bot_api}/sendmessage" --data "text=$msg&chat_id=${your_telegram_id}"
